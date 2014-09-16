@@ -96,6 +96,10 @@ Then run:
 	echo "source ~/.oracle_client" >> ~/.bash_profile
 	source ~/.bash_profile
 
+Don't forget to attach lib path to LD_LIBRARY_PATH:
+
+	LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$DYLD_LIBRARY_PATH
+
 
 Try gem installation and you may get:
 
@@ -126,7 +130,6 @@ So do it!:
 
 	cd /usr/local/oracle/product/instantclient_64/12.1.0.2.0/lib
 	ln -s libclntsh.so.12.1 libclntsh.so
-
 
 Now install gem:
 
