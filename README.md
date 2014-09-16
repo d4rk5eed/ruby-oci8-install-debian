@@ -5,7 +5,7 @@ ruby-oci8-install-debian
 
 This guide describes installation process of Oracle instant Client required
 for [kubo/ruby-oci8](https://github.com/kubo/ruby-oci8).
-It required if gem installation is featured with error message as follows:
+It is required if gem installation is featured with error message as follows:
 
 	---------------------------------------------------
 	Error Message:
