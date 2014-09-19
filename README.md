@@ -89,16 +89,15 @@ Add the following to it:
 	export DYLD_LIBRARY_PATH=$ORACLE_HOME/lib:$DYLD_LIBRARY_PATH
 	export TNS_ADMIN=$ORACLE_BASE/admin/network
 	export SQLPATH=$ORACLE_HOME/sqlplus/admin
+	
+Don't forget to attach lib path to LD_LIBRARY_PATH:
 
+	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$DYLD_LIBRARY_PATH
 
 Then run:
 
 	echo "source ~/.oracle_client" >> ~/.bash_profile
 	source ~/.bash_profile
-
-Don't forget to attach lib path to LD_LIBRARY_PATH:
-
-	LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$DYLD_LIBRARY_PATH
 
 
 Try gem installation and you may get:
